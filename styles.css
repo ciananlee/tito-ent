@@ -250,3 +250,84 @@ i:hover {
     color: var(--main-green);
     transition: ease-in-out .5s;
 }
+
+/* MEDIA */
+
+@media (max-width: 480px) {
+    * {
+        max-width: 400px;
+    }    
+    h1 {
+        font-size: 1.125rem;
+        font-weight: bold;
+    }    
+    h2 {
+        font-size: 0.875rem;
+        text-align: center;
+        font-weight: normal;
+    }    
+    h3 {
+        font-size: 0.75rem;
+        text-align: center;
+        font-weight: 450;
+    }    
+    p {
+        font-size: 0.75rem;
+    }
+    li {
+        font-size: 0.75rem;
+    }
+    #site-title {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 2.25rem;
+    }
+    nav {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        justify-content: space-around;
+    }
+    nav li {
+        display: inline;
+        width: 100%;
+        white-space: nowrap;
+        
+    }
+    #projects {
+        width: 95%;
+        max-width: 300px;
+        min-width: 200px;
+        margin: 0 auto;
+    }
+    .work, {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-flow: row;
+        gap: 3px 2px;
+        text-align: center;
+    }
+    .contact, .about {
+        width: 80%;
+        height: auto;
+        padding: 25px 0px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-auto-flow: row;
+    }
+    .contact-bottom {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    i {
+        margin: 30px 10px;
+    }
+}
