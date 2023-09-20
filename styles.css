@@ -79,7 +79,8 @@ img {
 
 nav {
     height: 130px;
-    position: relative;
+    width: 100%;
+    position: fixed;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -121,7 +122,7 @@ nav li {
 .about {
     width: 75%;
     height: 350px;
-    padding-top: 130px;
+    padding-top: 260px;
     margin: 0 auto;
     display: grid;
     justify-items: center;
@@ -148,7 +149,7 @@ nav li {
 .services {
     height: 600px;
     width: 75%;
-    padding-top: 50px;
+    padding-top: 180px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -191,7 +192,7 @@ nav li {
 
 .work {
     width: 75%;
-    padding: 50px 0;
+    padding: 180px 0;
     margin: 0 auto;
     display: grid;
     justify-items: center;
@@ -222,7 +223,7 @@ nav li {
 .contact {
     width: 75%;
     height: 350px;
-    padding-top: 100px;
+    padding-top: 230px;
     margin: 0 auto;
     display: grid;
     justify-items: center;
@@ -301,7 +302,6 @@ i:hover {
     nav {
         width: 100%;
         height: 100px;
-        position: fixed;
         display: inline-flex;
         flex-wrap: wrap;
         align-items: center;
@@ -412,5 +412,8 @@ i:hover {
     }
     i {
         margin: 30px 10px;
+    }
+    .home, .about, .services, .work, .contact {
+        padding-top: 150px;
     }
 }
