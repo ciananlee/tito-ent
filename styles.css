@@ -111,6 +111,11 @@ nav li {
     height: 50%;
 }
 
+#cinema {
+    visibility: hidden;
+    display: none;
+}
+
 /* About */
 
 .about {
@@ -312,6 +317,17 @@ i:hover {
     nav li {
         padding: 0px 20px;
     }
+    #cinema {
+        visibility: visible;
+        display:unset;
+    }
+    #home-img {
+        visibility: hidden;
+        display: none;
+    }
+    .about, .contact {
+        text-align: center;
+    }
     .services {
         width: 80%;
         margin: 0 auto;
@@ -374,5 +390,8 @@ i:hover {
     }
     i {
         margin: 30px 10px;
+    }
+    .home, .about, .services, .contact {
+        align-content: space-evenly;
     }
 }
