@@ -33,13 +33,12 @@ h2 {
     font-size: 1.75rem;
     text-align: center;
     font-weight: normal;
-    transition: ease-in-out 1s;
+    transition: ease 2s;
 }
 
 h2:hover {
     font-size: 1.85rem;
-    width: 100%;
-    transition: ease-in-out 1s;
+    transition: ease 2s;
 }
 
 h3 {
@@ -281,7 +280,7 @@ i:hover {
         font-size: 0.75rem;
         font-weight: 450;
     }    
-    p {
+    p, label {
         font-size: 0.75rem;
     }
     li {
@@ -295,15 +294,18 @@ i:hover {
     }
     nav {
         width: 100%;
-        display: inline-block;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
         text-align: center;
         justify-content: center;
-    }
-    nav li {
-        display: inline;
-        width: 100%;
-        white-space: nowrap;
+        padding-bottom: 5px;
+        border-bottom: 3px solid var(--main-purple);
+    } 
+    .nav-list {
+        display: flex;
         justify-content: center;
+        align-items: center;
     }
     .services {
         padding: 25px 0;
