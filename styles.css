@@ -33,6 +33,13 @@ h2 {
     font-size: 1.75rem;
     text-align: center;
     font-weight: normal;
+    transition: ease-in-out 1s;
+}
+
+h2:hover {
+    font-size: 1.85rem;
+    width: 100%;
+    transition: ease-in-out 1s;
 }
 
 h3 {
